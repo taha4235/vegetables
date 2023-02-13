@@ -1,0 +1,724 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    height: 55px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+nav h3{
+    font-size: 30px;
+    color: #333;
+    text-transform: capitalize;
+}
+#check{
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-search{
+    width: 250px;
+    height: 36px;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+}
+.input-search input{
+    width: 70%;
+    height: 100%;
+    outline:0;
+    border: 0;
+    padding: 6px;
+    font-size: 18px;
+}
+.logo i{
+    margin-right: 10px;
+    color: #138308;
+    font-size: 27px;
+}
+.input-search button{
+    outline: 0;
+    border: 0;
+    width: 80px;
+    height: 36px;
+    background-color: green;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.input-search button:hover{
+    background-color: #333;
+    transition: background 1s;
+}
+button i{
+    color: white;
+    font-size: 20px;
+}
+.container-2{
+    width: 100%;
+    height: 45px;
+    box-shadow: 2px 2px 2px 2px silver;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.icon-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    margin-left: 40px;
+}
+.icons-font ul li a:hover{
+    color: #138308;
+    transition: color 1s;
+}
+.icon-links ul li a{
+    text-decoration: none;
+    color: #333;
+    text-transform: capitalize;
+}
+.icon-links ul li a:hover{
+    padding: 5px 10px;
+    background-color: #138308;
+    color: white;
+    transition: background 1s;
+    border-radius: 5px;
+
+}
+.icons-font ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.icons-font ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.main-content{
+    display: flex;
+    position: absolute;
+    top: 200px;
+    
+}
+.first-container-images img{
+    width: 500px;
+    position:relative;
+    margin-left: -150px;
+}
+.content-container{
+    position: relative;
+    top: 100px;
+}
+.content-container h3{
+    font-size: 33px;
+    color: #333;
+    text-transform: capitalize;
+}
+.content-container h4{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.content-container button{
+    width: 140px;
+    height: 33px;
+    background-color: #138308;
+    outline: 0;
+    border: 0;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 5px;
+}
+.content-container button:hover{
+    background-color: #333;
+    transition: background 1s;
+}
+.offer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 700px;
+    left: 200px;
+    margin-bottom: 20px;
+}
+.container-1-offer{
+    width: 400px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 2px silver;
+    background-image: url(images/banner-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container-2-offer{
+    width: 400px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 2px silver;
+    margin-left: 50px;
+    background-image: url(images/banner-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container-1-offer .offer-info{
+   margin-left: 50px;
+   margin-top: 40px;
+}
+.container-1-offer .offer-info h3{
+    font-size: 27px;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 20px;
+}
+.container-1-offer .offer-info p{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 20px;
+}
+.container-1-offer .offer-info button{
+    width: 100px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    background-color: #138308;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.container-2-offer .offer-info{
+    margin-left: 50px;
+    margin-top: 40px;
+ }
+ .container-2-offer .offer-info h3{
+     font-size: 27px;
+     text-transform: capitalize;
+     color: #333;
+     margin-bottom: 20px;
+ }
+ .container-2-offer .offer-info p{
+     font-size: 15px;
+     text-transform: capitalize;
+     color: #333;
+     margin-bottom: 20px;
+ }
+ .container-2-offer .offer-info button{
+     width: 100px;
+     height: 30px;
+     outline: 0;
+     border: 0;
+     background-color: #138308;
+     color: white;
+     text-transform: capitalize;
+     margin-bottom: 20px;
+ }
+ .about-category{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 800px;
+ }
+ .about-category .content h3{
+    position: relative;
+    top: 60px;
+    font-size: 34px;
+    color: #333;
+    text-transform: capitalize;
+ }
+ .about-category .content h3 span{
+    margin-left: 10px;
+    color: #138308;
+ }
+ .content-container-info{
+    width: 220px;
+    height: 300px;
+   box-shadow: 2px 2px 2px 2px silver;
+   border-radius: 5px;
+    margin-left: 100px;
+ }
+ .container-content{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+ }
+ .vegetables-info h4{
+    font-size: 33px;
+    color: #333;
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-weight: 300;
+ }
+ .vegetables-info p{
+    font-size: 14px;
+    color: #333;
+    text-transform: capitalize;
+    margin-top: 10px;
+ }
+ .vegetables-info img{
+    width: 160px;
+    height: 150px;
+ }
+ .vegetables-info button{
+    width: 150px;
+    height: 30px;
+    background-color: #138308;
+    color: white;
+    outline: 0;
+    border: 0;
+  cursor: pointer;
+  border-radius:5px; }
+  .vegetables-info button:hover{
+    background-color: #333;
+    transition: background 1s;
+  }
+  .container-products{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 700px;
+  }
+  .content-title h3{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #333;
+  }
+  .content-title h3 span{
+    color: #138308;
+  }
+  .product-container{
+    display: flex;
+   position: absolute
+   ;
+   top: 80px;
+   left: 160px;
+  }
+  .container-product{
+    width: 300px;
+    height: 450px;
+    box-shadow: 2px 2px 2px 2px silver;
+    margin-left: 40px;
+  }
+  .price-offer{
+    width: 100px;
+    height: 30px;
+    background: #138308;
+    padding-inline-start: 10px;
+    float: left;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 0.2s;
+  }
+  .price-offer h3{
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 300;
+    
+  }
+  .price-offer h3 span{
+    margin-right: 2px;
+  }
+  .container-products img{
+    width: 200px;
+  }
+  .products-title{
+    font-size: 23px;
+    color: #333;
+    text-transform: capitalize;
+  }
+  .active3{
+    margin-top: 35px;
+  }
+  .stars ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 2px;
+    margin-top: 10px;
+  }
+  .stars ul li a{
+    text-decoration: none;
+    color: yellow;
+  }
+  .container-product p{
+    font-size: 17px;  
+    font-weight: 300;
+    color: #333;
+    margin-top: 10px;
+}
+.container-product .input-box{
+    margin-top: 10px;
+}
+.container-product .input-box span:not(.kg){
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #333;
+}
+.container-product .input-box .kg{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #333;
+    margin-left: 10px;
+}
+.container-product .input-box input{
+    width: 60px;
+    margin-left: 5px;
+    height: 23px;
+    padding: 3px;
+    outline: none;
+}
+.container-product #add{
+    width: 80%;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #138308;
+    color: white;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.active5{
+    position: absolute;
+    top: 570px;
+}
+.container-product .ac{
+    height: 160px;
+}
+.container-product .right-nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+   display: none;
+   position: absolute;
+}
+.container-product .right-nav ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 50px;
+}
+.container-product .right-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+   background-color: #138308;
+}
+.container-product .right-nav ul li a:hover{
+    background-color: transparent;
+    border: 1px solid #138308;
+    transition: background 1s;
+    color: #138308;
+}
+.active0{
+    position: absolute;
+    top: 1050px;
+}
+.activeimages9{
+    height: 140px;
+}
+#add:hover{
+    background-color: #333;
+    transition: background 1s;
+}
+.deal-container{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 2990px;
+   
+}
+.container-deal{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/deal-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.countdown {
+    display: flex;
+   float: left;
+    height: 130px;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+  
+  .countdown-item {
+  text-align: center;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .countdown-number {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  #get{
+  width: 200px;
+  text-transform: capitalize;
+  height: 44px;
+  outline: 0;
+  border: 0;
+  background-color: #138308;
+  color: white;
+   margin-top: 400px; 
+ position: relative;
+ left: 0px;
+ margin-left: -400px;
+ cursor: pointer;
+ border-radius: 5px;
+  }
+  #get:hover{
+    background-color: royalblue;
+    color: white;
+    transition: background 1s;
+  }
+  .countdown-label {
+    font-size: 18px;
+    font-weight: normal;
+    background-color: royalblue;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .contact{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 3530px;
+  }
+  .contact h3{
+    position: relative;
+    top: 40px;
+    font-size: 44px;
+    text-transform: capitalize;
+    color: #333;
+  }
+  .contact h3 span{
+    color: #138308;
+  }
+  .container-contact{
+    width: 750px;
+    height: 400px;
+    box-shadow: 2px 2px 2px 2px silver;
+    border-radius: 5px;
+    margin-top: 100px;
+  }
+  ::-webkit-scrollbar {
+    width: 1rem;
+    background-color: #F5F5F5;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-thumb {
+  background-color: #138308;
+  border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: #555555;
+  transition: background 1s;
+  }
+  .container-contact .form-item-1{
+    position: relative;
+   top: 40px;
+   width: fit-content;
+  }
+  .container-contact .form-item-1 input{
+    width: 300px;
+    margin-right: 10px;
+    height: 39px;
+    background-color: #ccc;
+    outline: 0;
+    border: 0;
+    padding:10px;
+    border-radius: 5px;
+  }
+  .form-textarea{
+    position: relative;
+    top: 90px;
+    width: 90%;
+  }
+  .form-textarea textarea{
+    width: 90%;
+    height: 130px;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    background-color: #ccc;
+  }
+  .submit-button{
+    position: relative;
+    top: 100px;
+  }
+  .submit-button button{
+    width: 200px;
+    height: 34px;
+    outline: 0;
+    border: 0;
+    background: #138308;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .subscribe{
+    position: relative;
+    top: 2790px;
+    width: 100%;
+    height: 50vh;
+    background-image: url(images/newsletter-bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .input-subscribe-search{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,-50%);
+  }
+  .input-subscribe-search h3{
+    font-size: 29px;
+    text-transform: capitalize;
+    color: #333;
+  }
+  .container-input-subscribe{
+    margin-top: 40px;
+  }
+  .container-input-subscribe input{
+     width: 250px;
+     height: 33px;
+     background-color: #ccc;
+     outline: 0;
+     border: 0;
+     padding: 10px;
+     
+  }
+  .container-input-subscribe button{
+    width: 75px;
+    height: 33px;
+    background-color: #138308;
+    color: white;
+    text-transform: capitalize;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+   position: relative;
+   margin-left: -20px;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+  }
+  footer{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: 2800px;
+  }
+  .links-icon-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .footer-icon-links{
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  .footer-icon-links h3{
+    font-size: 33px;
+    color: #333;
+    text-transform: capitalize;
+  }
+  .footer-icon-links ul li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #333;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  .footer-icon-links ul li:hover{
+    color: black;
+    transition:1s;
+    padding: 5px;
+    text-decoration: underline;
+  }
+
+  .active-icon-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .active-icon-links ul li a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 50%;
+  }
+  .active-icon-links ul li a:hover{
+    background-color: transparent;
+    border: 1px solid royalblue;
+    transition: background 1s;
+    color: royalblue;
+  }
+  .container-table{
+    position: absolute;
+    top: 4150px;
+    width: 100%;
+    height: 50vh;
+  }
+  .container-table table{
+    width: 100%;
+    
+  }
+  .container-table table th{
+    background-color: silver;
+    padding: 10px;
+   
+  }
+  .container-table tbody td{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .delete{
+    width: 60px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    text-transform: capitalize;
+   top: 10px;
+    padding: 5px 60px;
+    border-radius: 5px;
+    position: relative;
+
+  }
+  .delete:hover{
+    background-color: red;
+    transition: background 1s;
+  }
+  
